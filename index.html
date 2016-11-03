@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>converse</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel='stylesheet' href='css/head.css' />
+		<link rel='stylesheet' href='css/footer.css' />
+		<script src="js/jquery.min.js"></script> 
+		<script src="js/jquery-migrate-1.1.0.min.js"></script> 
+		<script src='js/index.js'></script>
+		<script src='js/head.js'></script>
+
+	</head>
+	<body>
+	<!--header start-->
+		<div class='header'>
+			<div class='headTop'>
+				<div class='headContent'>
+					<a href=''><div class='logo'><span>converse</span></div></a>
+					<div class='headLeft'>
+						<div class='loginbar'>
+							<span class='login'>登录</span>
+							<span>/</span>
+							<span class='regesiter'>注册</span>
+						</div>
+						<div class='others'>
+							<ul>
+								<li class='loginToal'><i class='sj'></i></li>
+								<li class='shopcar'></li>
+								<li class='chat'></li>
+								<li class='search'><i class="sj"></i></li>
+								<li class='help'></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='display'>
+				<div class='loginDisplay'>
+					<div class='loginContent'>
+						<div class='createCount'>
+							<h2 class='loginTitle'>还未注册？</h2>
+							<div class='button'>注册账户</div>
+						</div>
+						<div class='loginChoice'>
+							<h2 class='loginTitle'>您可以直接登录</h2>
+							<ul class='loginMode'>
+								<li class='wb'><a href=''></a></li>
+								<li class='wx'><a href=''></a></li>
+								<li class='xl'><a href=''></a></li>
+								<li class='rr'><a href=''></a></li>
+								<li class='db'><a href=''></a></li>
+							</ul>
+						</div>
+						<div class='loginPart'>
+							<h2 class='loginTitle'>已成为会员？</h2>
+							<form action='' method='post'>
+								<ul class='loginForm'>
+									<li class='border'><input type="text" name="userName" value='' /><span>邮箱/手机</span></li>
+									<li class='border'><input type="password" name="pwd" value='' /><span>账户密码</span></li>
+									<li><input id='yz' type="text" name="validate" value='' /><span>请输入验证码</span><img class='yzImg' src='images/yz.jpg'></li>
+									<li style='text-align: right;'><a href=''>换一张</a></li>
+									<li><div class='button'>登录</div></li>
+								</ul>
+							</form>
+						</div>
+					</div>
+					<div class='regesiterContent'>
+						<ul class='regesiterBox'>
+							<li>
+								<label>邮箱<span>*</span></label>
+								<div class='ipt'>
+									<input class='ys' type='email' name='Email' vlaue='' >
+									<span class='moren'>example@converse.com</span>
+									<span class='error'></span>
+								</div>
+							</li>
+							<li>
+								<label>手机号码<span>*</span></label>
+								<div class='ipt'>
+									<input class='ys' type='text' name='phoneNumber' vlaue='' >
+									<span class='moren'>136****555</span>
+									<span class='error'></span>
+								</div>
+							</li>
+							<li>
+								<label>性别<span>*</span></label>
+								<input type="hidden" name="">
+								<div class='ipt'>
+									<div class='checkbox'>男</div>
+									<div class='checkbox'>女</div>
+								</div>
+							</li>
+						</ul>
+						<ul class='regesiterBox'>
+							<li>
+								<label>输入密码<span>*</span></label>
+								<div class='ipt'>
+									<input class='ys' type='password' vlaue='' >
+									<span class='moren'>输入密码</span>
+									<span class='error'></span>
+								</div>
+							</li>
+							<li>
+								<label>确认密码<span>*</span></label>
+								<div class='ipt'>
+									<input class='ys' type='text' name='pwd' vlaue='' >
+									<span class='moren'>请再次输入密码</span>
+									<span class='error'></span>
+								</div>
+							</li>
+							<li>
+								<label>生日（年-月-日）<span>*</span></label>
+								<div class='ipt'>
+									
+								</div>
+							</li>
+						</ul>
+						<ul class='regesiterBox'>
+							<li>
+								<label>验证码<span>*</span></label>
+								<div class='ipt'>
+									<input id='yz' type='text' vlaue='' >
+									<img class='yzImg' src='images/yz.jpg'>
+									<span class='moren'>输入验证码</span>
+									<span class='error'></span>
+								</div>
+							</li>
+							<li>
+								<label>   </label>
+								<div class='button' style='margin-top: 15px;'>登录</div>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class='searchDisplay'>
+					<div class='searchContent'>
+						<input type="text" name="search">
+						<span>想找什么随便搜</span>
+						<div class='searchButton'>
+							<div class='searchBt'></div>
+							<div class='close'></div>
+					</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class='nav'>
+				<ul class='navContent'>
+					<li><a href=''>男的</a></li>
+					<li><a href=''>女的</a></li>
+					<li><a href=''>儿童</a></li>
+					<li><a href=''>电子杂志</a></li>
+					<li><a href=''>店铺分布</a></li>
+				</ul>
+				<div class='menu boy'>
+					<ul class='menuContent'>
+						<li><a href=''><img src='images/m-top1-1.jpg' /><span>踩的</span></a></li>
+						<li><a href=''><img src='images/m-top1-2.jpg' /><span>穿的</span></a></li>
+						<li><a href=''><img src='images/m-top1-3.jpg' /><span>戴的</span></a></li>
+						<li><a href=''><img src='images/m-top1-4.jpg' /><span>新产品</span></a></li>
+						<li><a href=''><img src='images/m-top1-5.jpg' /><span>优惠</span></a></li>
+					</ul>
+					<div class='line'></div>
+					<ul class='menuContent'>
+						<li><a href=''><img src='images/m-bt1-1.jpg' /><span>经典款</span></a></li>
+						<li><a href=''><img src='images/m-bt1-2.jpg' /><span>all stars</span></a></li>
+						<li><a href=''><img src='images/m-bt1-3.jpg' /><span>cons</span></a></li>
+						<li><a href=''><img src='images/m-bt1-4.jpg' /><span>jack purcell</span></a></li>
+						<li><a href=''><img src='images/m-bt1-5.jpg' /><span>chuck ii</span></a></li>
+					</ul>
+				</div>
+				<div class='menu girl'>
+					<ul class='menuContent'>
+						<li><a href=''><img src='images/m-top2-1.jpg' /><span>踩的</span></a></li>
+						<li><a href=''><img src='images/m-top2-2.jpg' /><span>穿的</span></a></li>
+						<li><a href=''><img src='images/m-top2-3.jpg' /><span>戴的</span></a></li>
+						<li><a href=''><img src='images/m-top1-4.jpg' /><span>新产品</span></a></li>
+						<li><a href=''><img src='images/m-top1-5.jpg' /><span>优惠</span></a></li>
+					</ul>
+					<div class='line'></div>
+					<ul class='menuContent'>
+						<li><a href=''><img src='images/m-bt1-1.jpg' /><span>经典款</span></a></li>
+						<li><a href=''><img src='images/m-bt2-2.jpg' /><span>all stars</span></a></li>
+						<li><a href=''><img src='images/m-bt2-3.jpg' /><span>cons</span></a></li>
+						<li><a href=''><img src='images/m-bt2-4.jpg' /><span>jack purcell</span></a></li>
+						<li><a href=''><img src='images/m-bt2-5.jpg' /><span>chuck ii</span></a></li>
+					</ul>
+				</div>
+				<div class='menu child'>
+					<ul class='menuContent'>
+						<li><a href=''><img src='images/m-top3-1.jpg' /><span>踩的</span></a></li>
+						<li><a href=''><img src='images/m-top1-4.jpg' /><span>穿的</span></a></li>
+						<li><a href=''><img src='images/m-top1-5.jpg' /><span>戴的</span></a></li>
+					</ul>
+					<div class='line'></div>
+					<ul class='menuContent'>
+						<li><a href=''><img src='images/m-bt1-1.jpg' /><span>经典款</span></a></li>
+						<li><a href=''><img src='images/m-bt3-2.jpg' /><span>all stars</span></a></li>
+						<li><a href=''><img src='images/m-bt3-3.jpg' /><span>cons</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class='headpop'></div>
+		</div>
+	<!--banner start-->
+		<div class='banner'>
+			<ul class='bannerImg'>
+				<li class='hover1'  style='opacity: 1;'><a href=''><img src='images/banner1-static.jpg'/></a></li>
+				<li><a href=''><img src='images/banner2.jpg' /></a></li>
+				<li><a href=''><img src='images/banner3.jpg'/></a></li>
+				<li class='hover2'><a href=''><img src='images/banner4-static.jpg' /></a></li>
+				<li><a href=''><img src='images/banner5.jpg' /></a></li>			
+			</ul>
+			<div class='pre bannerBt'><span class='icon1'></span></div>
+			<div class='next bannerBt'><span class='icon2'></span></div>
+			<ul class='imgTitle'>
+				<li style='border-top: 1px solid #333; color: #333;'>橡胶革新</li>
+				<li>街头质感</li>
+				<li>雅痞新经典</li>
+				<li>雨天新主张</li>
+				<li>返校季</li>
+			</ul>
+		</div>
+	<!--main start-->
+		<div class='main'>
+			<div class='hot'>
+				<div  class='hotTitle'><h1>热卖单品</h1></div>	
+				<div class='hotTop'>
+					<a class='hotTopBox' href=''>
+						<h3>男的踩的</h3>
+						<div class='hotTopImg'><img src='images/hot1.jpg' /></div>
+					</a>
+					<a class='hotTopBox'  href=''>
+						<h3>女的踩的</h3>
+						<div class='hotTopImg'><img src='images/hot2.jpg' /></div>
+					</a>
+					<a class='hotTopBox' href=''>
+						<h3>穿的</h3>
+						<div class='hotTopImg'><img src='images/hot3.jpg' /></div>
+					</a>
+					<a class='hotTopBox' href=''>
+						<h3>戴的</h3>
+						<div class='hotTopImg'><img src='images/hot4.jpg' /></div>
+					</a>
+				</div>
+				<div class='hotLine'><div class='hotLineBox'></div></div>
+				<div class='hotMain'>
+					<div class='hotBox' style='opacity: 1;'>
+						<div class='hotBoxClum'>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon1-1.png'></a></div>
+								<p class='describe'><a href=''>Chuck Taylor All Star<br/>纯色帆布鞋</a></p>
+								<span class='price'>￥369.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon1-2.png'></a></div>
+								<p class='describe'><a href=''>All Star Derby<br/>撞色拼接</a></p>
+								<span class='price'>￥439.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon1-3.png'></a></div>
+								<p class='describe'><a href=''>Break Point<br/>复古网球鞋</a></p>
+								<span class='price'>￥469.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon1-4.png'></a></div>
+								<p class='describe'><a href=''>Jack Purcell M-Series<br/>牛皮革纯色开口笑</a></p>
+								<span class='price'>￥699.00</span>
+							</div>
+						</div>
+						<div class='hotBoxline'></div>
+						<div class='hotBoxClum'>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon1-5.png'></a></div>
+								<p class='describe'><a href=''>Chuck Taylor All Star<br/>纯色帆布鞋</a></p>
+								<span class='price'>￥369.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon1-6.png'></a></div>
+								<p class='describe'><a href=''>All Star Derby<br/>撞色拼接</a></p>
+								<span class='price'>￥439.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon1-7.png'></a></div>
+								<p class='describe'><a href=''>Break Point<br/>复古网球鞋</a></p>
+								<span class='price'>￥469.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon1-8.png'></a></div>
+								<p class='describe'><a href=''>Jack Purcell M-Series<br/>牛皮革纯色开口笑</a></p>
+								<span class='price'>￥699.00</span>
+							</div>
+						</div>
+						<div class='more'><a href=''>查看所有男的踩的最新商品<span></span></a></div>
+					</div>
+					<div class='hotBox'>
+						<div class='hotBoxClum'>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon2-1.png'></a></div>
+								<p class='describe'><a href=''>Chuck Taylor All Star<br/>纯色帆布鞋</a></p>
+								<span class='price'>￥369.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon2-2.png'></a></div>
+								<p class='describe'><a href=''>All Star Derby<br/>撞色拼接</a></p>
+								<span class='price'>￥439.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon2-3.png'></a></div>
+								<p class='describe'><a href=''>Break Point<br/>复古网球鞋</a></p>
+								<span class='price'>￥469.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon2-4.png'></a></div>
+								<p class='describe'><a href=''>Jack Purcell M-Series<br/>牛皮革纯色开口笑</a></p>
+								<span class='price'>￥699.00</span>
+							</div>
+						</div>
+						<div class='hotBoxline'></div>
+						<div class='hotBoxClum'>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon2-5.png'></a></div>
+								<p class='describe'><a href=''>Chuck Taylor All Star<br/>纯色帆布鞋</a></p>
+								<span class='price'>￥369.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon2-6.png'></a></div>
+								<p class='describe'><a href=''>All Star Derby<br/>撞色拼接</a></p>
+								<span class='price'>￥439.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon2-7.png'></a></div>
+								<p class='describe'><a href=''>Break Point<br/>复古网球鞋</a></p>
+								<span class='price'>￥469.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon2-8.png'></a></div>
+								<p class='describe'><a href=''>Jack Purcell M-Series<br/>牛皮革纯色开口笑</a></p>
+								<span class='price'>￥699.00</span>
+							</div>
+						</div>
+						<div class='more'><a href=''>查看所有男的踩的最新商品<span></span></a></div>
+					</div>
+					<div class='hotBox'>
+						<div class='hotBoxClum'>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon3-1.png'></a></div>
+								<p class='describe'><a href=''>Chuck Taylor All Star<br/>纯色帆布鞋</a></p>
+								<span class='price'>￥369.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon3-2.png'></a></div>
+								<p class='describe'><a href=''>All Star Derby<br/>撞色拼接</a></p>
+								<span class='price'>￥439.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon3-3.png'></a></div>
+								<p class='describe'><a href=''>Break Point<br/>复古网球鞋</a></p>
+								<span class='price'>￥469.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon3-4.png'></a></div>
+								<p class='describe'><a href=''>Jack Purcell M-Series<br/>牛皮革纯色开口笑</a></p>
+								<span class='price'>￥699.00</span>
+							</div>
+						</div>
+						<div class='hotBoxline'></div>
+						<div class='hotBoxClum'>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon3-5.png'></a></div>
+								<p class='describe'><a href=''>Chuck Taylor All Star<br/>纯色帆布鞋</a></p>
+								<span class='price'>￥369.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon1-6.png'></a></div>
+								<p class='describe'><a href=''>All Star Derby<br/>撞色拼接</a></p>
+								<span class='price'>￥439.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon1-7.png'></a></div>
+								<p class='describe'><a href=''>Break Point<br/>复古网球鞋</a></p>
+								<span class='price'>￥469.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon1-8.png'></a></div>
+								<p class='describe'><a href=''>Jack Purcell M-Series<br/>牛皮革纯色开口笑</a></p>
+								<span class='price'>￥699.00</span>
+							</div>
+						</div>
+						<div class='more'><a href=''>查看所有男的踩的最新商品<span></span></a></div>
+					</div>
+					<div class='hotBox'>
+						<div class='hotBoxClum'>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon4-1.png'></a></div>
+								<p class='describe'><a href=''>Chuck Taylor All Star<br/>纯色帆布鞋</a></p>
+								<span class='price'>￥369.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon4-2.png'></a></div>
+								<p class='describe'><a href=''>All Star Derby<br/>撞色拼接</a></p>
+								<span class='price'>￥439.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon4-3.png'></a></div>
+								<p class='describe'><a href=''>Break Point<br/>复古网球鞋</a></p>
+								<span class='price'>￥469.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon4-4.png'></a></div>
+								<p class='describe'><a href=''>Jack Purcell M-Series<br/>牛皮革纯色开口笑</a></p>
+								<span class='price'>￥699.00</span>
+							</div>
+						</div>
+						<div class='hotBoxline'></div>
+						<div class='hotBoxClum'>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon4-5.png'></a></div>
+								<p class='describe'><a href=''>Chuck Taylor All Star<br/>纯色帆布鞋</a></p>
+								<span class='price'>￥369.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon4-6.png'></a></div>
+								<p class='describe'><a href=''>All Star Derby<br/>撞色拼接</a></p>
+								<span class='price'>￥439.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon4-7.png'></a></div>
+								<p class='describe'><a href=''>Break Point<br/>复古网球鞋</a></p>
+								<span class='price'>￥469.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/hotcon4-8.png'></a></div>
+								<p class='describe'><a href=''>Jack Purcell M-Series<br/>牛皮革纯色开口笑</a></p>
+								<span class='price'>￥699.00</span>
+							</div>
+						</div>
+						<div class='more'><a href=''>查看所有男的踩的最新商品<span></span></a></div>
+					</div>
+				</div>
+			</div>
+			<div class='newProduct'>
+				<div  class='hotTitle'><h1>新品热荐</h1></div>
+				<div class='newBox'>
+						<div class='hotBoxClum'>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/new1.png'></a></div>
+								<p class='describe'><a href=''>Chuck Taylor All Star<br/>纯色帆布鞋</a></p>
+								<span class='price'>￥369.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/new2.png'></a></div>
+								<p class='describe'><a href=''>All Star Derby<br/>撞色拼接</a></p>
+								<span class='price'>￥439.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/new3.png'></a></div>
+								<p class='describe'><a href=''>Break Point<br/>复古网球鞋</a></p>
+								<span class='price'>￥469.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/new4.png'></a></div>
+								<p class='describe'><a href=''>Jack Purcell M-Series<br/>牛皮革纯色开口笑</a></p>
+								<span class='price'>￥699.00</span>
+							</div>
+						</div>
+						<div class='hotBoxline'></div>
+						<div class='hotBoxClum'>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/new5.png'></a></div>
+								<p class='describe'><a href=''>Chuck Taylor All Star<br/>纯色帆布鞋</a></p>
+								<span class='price'>￥369.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/new6.png'></a></div>
+								<p class='describe'><a href=''>All Star Derby<br/>撞色拼接</a></p>
+								<span class='price'>￥439.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/new7.png'></a></div>
+								<p class='describe'><a href=''>Break Point<br/>复古网球鞋</a></p>
+								<span class='price'>￥469.00</span>
+							</div>
+							<div class='hotcon'>
+								<div class='hotconImg'><a href=''><img src='images/new8.png'></a></div>
+								<p class='describe'><a href=''>Jack Purcell M-Series<br/>牛皮革纯色开口笑</a></p>
+								<span class='price'>￥699.00</span>
+							</div>
+						</div>
+						<div class='hotBoxline'></div>
+							<div class='hotBoxClum'>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/new9.png'></a></div>
+									<p class='describe'><a href=''>Chuck Taylor All Star<br/>纯色帆布鞋</a></p>
+									<span class='price'>￥369.00</span>
+								</div>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/new10.png'></a></div>
+									<p class='describe'><a href=''>All Star Derby<br/>撞色拼接</a></p>
+									<span class='price'>￥439.00</span>
+								</div>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/new11.png'></a></div>
+									<p class='describe'><a href=''>Break Point<br/>复古网球鞋</a></p>
+									<span class='price'>￥469.00</span>
+								</div>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/new12.png'></a></div>
+									<p class='describe'><a href=''>Jack Purcell M-Series<br/>牛皮革纯色开口笑</a></p>
+									<span class='price'>￥699.00</span>
+								</div>
+						</div>
+					</div>
+			</div>
+			<div class='special'>
+				<div class='specialTitle'>
+					<div class='specialTitleBox'><img src='images/star.png'><span> 热夏酷色 活力出街 </span></div>
+				</div>
+				<div class='specialMain'>
+					<div class='specialMainBox lf'>
+						<div class='specialMainBoxImg'>
+							<a href=''><img src='images/special1.jpg'></a>
+							<div class='mask'></div>
+						</div>
+						<a class='specialDescribe' href="">
+							<h2>经典演绎</h2>
+							<p>轻便薄底且无鞋头的牛皮革开口笑。方便的套脚设计，撞色围条增添动感气息。鞋头招牌的smile弧线、后跟logo都为牛津材质，美观耐磨。</p>
+						</a>
+						<a class='lookMore' href=''>查看更多</a>
+					</div>
+					<div class='specialMainBox rg'>
+						<div class='specialMainBoxImg'>
+							<a href=''><img src='images/special2.jpg'></a>
+							<div class='mask'></div>
+						</div>
+						<a class='specialDescribe' href="">
+							<h2>亮眼轻彩</h2>
+							<p>基本款Chuck Taylor All Star，外侧有醒目的圆形logo宛如徽章，秀出几分学院范儿。采用防泼水橡胶面料，搭配亮色设计，潮范十足。弹性橡胶底，防滑耐磨，经久耐穿。</p>
+						</a>
+						<a class='lookMore' href=''>查看更多</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 品牌故事 -->
+		<div class='stories'>
+			<h2>看看有哪些最新产品故事</h2>
+			<div class='storyMain'>
+				<div class='storyCloum'>
+					<a class='storyBox s1' href=''>all star</a>
+					<a class='storyBox s1' href=''>cons</a>
+					<a class='storyBox s1' href=''>jack purcell</a>
+				</div>
+				<div class='storyCloum'>
+					<a class='storyBox s1' href=''>rubber tracks</a>
+					<a class='storyBox s1' href=''>cons project</a>
+					<a class='storyBox s1' href=''>find jack</a>
+				</div>
+				<div class='storyLast'>
+					<a class='storyBox s2' href=''>音乐</a>
+					<a class='storyBox s2' href=''>diy</a>
+					<a class='storyBox s2' href=''>街头文化</a>
+					<a class='storyBox s2' href=''>时尚</a>
+					<a class='storyBox s2' href=''>人物</a>
+					<a class='storyBox s2' href=''>活动</a>
+				</div>
+			</div>
+		</div>
+		<div class='special'>
+				<div class='specialTitle'>
+					<div class='specialTitleBox'><img src='images/star.png'><span>  至酷精选 玩转潮流  </span></div>
+				</div>
+				<div class='specialMain2'>
+					<div class='specialMainBox2' style="margin-left: 0;">
+						<div class='specialMainBoxImg2'>
+							<a href=''><img src='images/specials1.jpg'></a>
+							<div class='mask'></div>
+						</div>
+						<a class='specialDescribe' href="">
+							<h2>穿脱自如</h2>
+							<p>本季新款All Star Core Slip Platform，潮流外增高设计，瞬间拉长腿部曲线且行走舒适自如。"一脚蹬"设计方便穿拖，和鞋身融为一体的鞋舌让整体显得简洁流畅，两边松紧拼接穿着舒适贴合</p>
+						</a>
+						<a class='lookMore2' href=''>查看更多</a>
+					</div>
+					<div class='specialMainBox2'>
+						<div class='specialMainBoxImg2'>
+							<a href=''><img src='images/specials2.jpg'></a>
+							<div class='mask'></div>
+						</div>
+						<a class='specialDescribe' href="">
+							<h2>运动性格</h2>
+							<p>腰部带松紧的长裤，随意自由风格。左侧以橡胶材质CT logo印花点缀，呈现简洁的运动风格。前后共三袋，丰富了层次感。口袋拉链采用撞色拼接带来质感对比，摆脱单板印象，丰富了视觉效果。高含量棉的针织面料，吸湿透气性理想，不易变形。</p>
+						</a>
+						<a class='lookMore2' href=''>查看更多</a>
+					</div>
+					<div class='specialMainBox2'>
+						<div class='specialMainBoxImg2'>
+							<a href=''><img src='images/special3.jpg'></a>
+							<div class='mask'></div>
+						</div>
+						<a class='specialDescribe' href="">
+							<h2>经典背包</h2>
+							<p>增强版Chuck Taylor All Star背包，拥有不同功能的内部口袋和电脑插袋，无论用于出游还是工作学习都能轻松胜任。绚丽多色可选，彰显青春风采。强韧的高密度面料经久耐用。</p>
+						</a>
+						<a class='lookMore2' href=''>查看更多</a>
+					</div>
+				</div>
+			</div>
+			<div class='concern'>
+				<h2>关注CONVERSE</h2>
+				<p>Converse同时活跃在各类社交网络平台，点击下列你所喜爱的常用社交平台，密切关注Converse的最新产品与资讯。</p>
+				<ul class='share'>
+					<li class='weibo'><a href=''></a></li>
+					<li class='weixin'><a href=''></a></li>
+					<li class='xinlang'><a href=''></a></li>
+					<li class='renren'><a href=''></a></li>
+					<li class='douban'><a href=''></a></li>
+				</ul>
+			</div>
+			<div class='siteMap'>
+				<div class='siteMapTitle'></div>
+				<ul class='sites'>
+					<li><a href=''>男的</a></li>
+					<li><a href=''>CHUCK TAYLOR ALL STAR</a></li>
+					<li><a href=''>CONVERSE CONS</a></li>
+					<li><a href=''>JACK PURCELL</a></li>
+					<li class='fen'><a href=''>CHUCK II</a></li>
+					<li><a href=''>踩的</a></li>
+					<li><a href=''>穿的</a></li>
+					<li><a href=''>戴的</a></li>
+					<li><a href=''>优惠</a></li>
+				</ul>
+				<ul class='sites'>
+					<li><a href=''>女的</a></li>
+					<li><a href=''>CHUCK TAYLOR ALL STAR</a></li>
+					<li><a href=''>CONVERSE CONS</a></li>
+					<li><a href=''>JACK PURCELL</a></li>
+					<li class='fen'><a href=''>CHUCK II</a></li>
+					<li><a href=''>踩的</a></li>
+					<li><a href=''>穿的</a></li>
+					<li><a href=''>戴的</a></li>
+					<li><a href=''>优惠</a></li>
+				</ul>
+					<ul class='sites'>
+					<li><a href=''>儿童</a></li>
+					<li><a href=''>CHUCK TAYLOR ALL STAR</a></li>
+					<li><a href=''>CONVERSE CONS</a></li>
+					<li><a href=''></a></li>
+					<li class='fen'><a href=''></a></li>
+					<li><a href=''>踩的</a></li>
+					<li><a href=''>穿的</a></li>
+					<li><a href=''>戴的</a></li>
+					<li><a href=''>优惠</a></li>
+				</ul>
+				<ul class='sites'>
+					<li><a href=''>电子杂志</a></li>
+					<li><a href=''>CHUCK TAYLOR ALL STAR</a></li>
+					<li><a href=''>CONVERSE CONS</a></li>
+					<li><a href=''>JACK PURCELL</a></li>
+					<li><a href=''></a></li>
+					<li><a href=''>活动</a></li>
+					<li><a href=''>音乐</a></li>
+					<li><a href=''>DIY</a></li>
+					<li><a href=''>时尚</a></li>
+					<li><a href=''>人物</a></li>
+				</ul>
+				<ul class='sites' style='margin-left: 120px;'>
+					<li><a href=''>我的账户</a></li>
+					<li><a href=''>现有订单</a></li>
+					<li><a href=''>过去订单</a></li>
+					<li><a href=''>退换货</a></li>
+					<li><a href=''>账户设置</a></li>
+					<li><a href=''>地址簿</a></li>
+					<li><a href=''>我的优惠券</a></li>
+					<li><a href=''>我的收藏</a></li>
+					<li><a href=''>我的评论</a></li>
+				</ul>
+				<ul class='sites'>
+					<li><a href=''>帮助和购物指南</a></li>
+					<li><a href=''>账户</a></li>
+					<li><a href=''>订单</a></li>
+					<li><a href=''>尺码</a></li>
+					<li><a href=''>退货和退款</a></li>
+					<li><a href=''>换货</a></li>
+					<li><a href=''>配送</a></li>
+					<li><a href=''>联系我们/a></li>
+					<li><a href=''>常见问题</a></li>
+				</ul>
+				<ul class='sites'>
+					<li><a href=''>NIKE</a></li>
+					<li><a href=''>NIKE+</a></li>
+					<li><a href=''>JORDAN</a></li>
+				</ul>
+			</div>
+	<!--footer start-->
+		<div class='footer'>
+			<div class='footerWrapper'>
+				<ul class='footerList'>
+					<li><a href=''>关于我们</a></li>
+					<li><a href=''>帮助和购物指南</a></li>
+					<li><a href=''>法律声明</a></li>
+					<li><a href=''>使用规则</a></li>
+				</ul>
+				<a class='footerLogo' href=''><div class='logo' style='margin: 0 auto;'><span>converse</span></div></a><br/>
+				<p>@匡威体育用品（中国）有限公司 保留所有权利    沪ICP备11044134号-2</p>
+			</div>
+		</div>
+	</body>
+</html>

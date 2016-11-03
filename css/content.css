@@ -1,0 +1,114 @@
+.contentMain{ width: 100%; }
+/*contentMaintop*/
+.contentMaintop{ width: 1000px; margin: 0 auto; padding-top: 20px; height: 750px; }
+.contentMaintop>div{ float: left; }
+	/*detailTab*/
+.detailTab{ width: 200px; height: 130px; }
+.tabWrap{ width: 100%; height: auto; margin-bottom: 20px; position: relative;}
+.tabTitle{ width: 100%; height: 30px; font-size: 14px; line-height: 30px; position: relative; }
+.tabTitle:hover{ cursor: pointer; }
+.tabTitle i{ width: 30px; height: 30px; position: absolute; top: 0; left: 0; }
+.share i{ background: url(../images/detail.png) no-repeat 0 0;  }
+.tabTitle span{ margin-left: 40px; }
+.tabCon{ width: 165px; height: 110px; margin-top: 10px; display: none; position: relative;}
+.tabCon a{ width: 35px; height: 35px; margin: 0 20px 20px 0; float: left;}
+.weibo{ background: url(../images/detail.png) no-repeat -82px 0; }
+.weixin{ background: url(../images/detail.png) no-repeat -82px -59px; }
+.tengxun{ background: url(../images/detail.png) no-repeat -82px -116px; }
+.renren{ background: url(../images/detail.png) no-repeat -82px -174px; }
+.douban{ background: url(../images/detail.png) no-repeat -82px -233px; }
+.weibo:hover{ background: url(../images/detail.png) no-repeat -137px 0; }
+.weixin:hover{ background: url(../images/detail.png) no-repeat -137px -59px; }
+.tengxun:hover{ background: url(../images/detail.png) no-repeat -137px -116px; }
+.renren:hover{ background: url(../images/detail.png) no-repeat -137px -174px; }
+.douban:hover{ background: url(../images/detail.png) no-repeat -137px -233px; }
+.collection i{ background: url(../images/detail.png) no-repeat 0 -43px; }
+#comtStar{ display: inline-block; width: 100px; height: 30px; background: url(../images/stars.png); margin-left: 0; }
+	/*detailProduct*/
+.detailProduct{ width: 520px; height: 100%; margin: 0 40px; position: relative; }
+.nameWrapper{ width: 100%;}
+.productName{ font-weight: bold; height: 37px; width: 100%; text-align: center; line-height: 37px;  } 
+.productPrice{ width: 100%; height: 37px; line-height: 37px; text-align: center; font-size: 24px; font-weight: bold}
+.productPrice i{ text-decoration: line-through; }
+.productPrice span{ color: red; }
+.productImg{ width: 400px; height: 400px; position: relative; margin-left: 20px; }
+.smallImg{ width: 400px; height: 400px; /*position: absolute; display: none;*/}
+.bigImg{ display: none; width: 200px; height: 510px; overflow: hidden; border-radius: 3px; position: absolute; z-index: 999; top: -75px; left: -300px; box-shadow: -2px -2px 3px #ccc,2px 2px 3px #ccc;background: #fff;}
+.glass{ display: none; width: 56px; height: 143px; position: absolute; border: 1px solid #ccc; background: #fff; opacity: .6; z-index: 101;  }
+.procuctList{ width: 100%; height: 72px; margin-top: 90px; }
+.productListCon{ width: 100%; height: 72px; }
+.productListCon li{ width: 70px; height: 70px; float: left; margin-left: 25px; text-align: center; line-height: 70px; border: 1px soldi #fff; }
+.productListCon li:hover{ cursor: pointer; }
+.productListCon li img{ width: 70px; height: 70px; }
+.productDescribe{ width: 100%; margin-top: 10px; }
+.productDescribe p{ width: 100%;  font-size: 12px; }
+.productbtn{ display: block; width: 200px; height: 48px; border: 1px solid #000; text-transform: capitalize; background: #000; color: #fff; margin: 20px auto; padding: 0 40px; text-align: center; line-height: 48px; font-size: 16px; }
+.productbtn:hover{ background: #fff; color: #333; transition: all .3s ease .1s; }
+
+	/*detailBuy*/
+.detailBuy{ width: 200px; height: 455px; }
+.colorChoice{ width: 100%; height: 60px; }
+.colors{ width: 100%; height: 50px; margin-top: 5px; }
+.colors li{ width: 50px; height: 50px; float: left; margin-left: 10px; border: 1px solid #fff;  }
+.colors li img{ width: 50px; height: 50px; }
+.colorMessage{ width: 100%; height: 36px; position: relative; margin-top: 10px; }
+.clmsg{ width: 100%; height: 36px; position: absolute; display: none; }
+.clmsg p{ height: 18px; height: 18px; font-size: 12px; }
+.sizeTable{ width: 100%; height: 20px; line-height: 20px;  text-indent: 20px; margin-top: 10px; position: relative;}
+.sizeTable:hover{ cursor: pointer; color: #999; text-decoration: underline; }
+.sizeTable:before{ content: ''; display: block; width:20px; height: 20px; background: url(../images/sprites_account.png) no-repeat -10px -138px; position: absolute; top: 0; left: 0;  }
+.popup{ width: 100%;height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: none;z-index: 1000; background: rgba(0,0,0,.8) }
+.popupCon{ width: 1000px; height: 426px; padding-top: 20px; display: none; position: fixed; top: 50%; left: 50%; margin-left: -500px; margin-top: -213px; background: #fff; z-index: 1001; }
+.popupCon h2{ width: 100%; height: 30px; font-size: 25px; color: #333; text-align: center; line-height: 30px; }
+.popupCon table{ border: 1px solid #b7b7b7; border-collapse: collapse; width: 840px; margin: 30px auto 0; }
+.popupCon table tr{ border: 1px solid #b7b7b7; }
+.popupCon table td{ border: 1px solid #b7b7b7; text-align: center; font-size: 14px; height: 28px; line-height: 28px; text-transform: uppercase; }
+.popupCon p{ color: #c62127; width: 100%; height: 20px; font-size: 14px; margin: 20px 0; text-align: center; }
+.popbt{ width: 200px; height: 50px; cursor: pointer; background: #000; color: #fff; text-align: center; line-height: 50px; font-size: 18px; margin: 0 auto; }
+.close{ width: 30px; height: 30px; background: url(../images/X-copy.png); position: absolute; top: 30px; right: 30px; cursor: pointer; }
+.sizeConverter{ width: 100%; height: 20px; padding-top: 15px; border-top: 1px solid #b7b7b7; margin-top: 10px; }
+.sizeConverter h2{ font-size: 18px; }
+.select{ width: 100%; height: 30px; margin-top: 20px; }
+.textLeft{ width: 90px; height: 100%; float: left; font-size: 12px; line-height: 30px; }
+.textRight{ width: 98px; height: 28px; float: right; position: relative; border: 1px solid #b7b7b7; }
+.textRight>span{ display: block; width:67px; height: 28px; line-height: 28px; font-size: 12px; color: #333; text-align: center;  }
+.textRight i{ width: 30px; height: 28px; display: block; background: url(../images/detail.png) no-repeat 11px -132px; border-left: 1px solid #b7b7b7; position: absolute; top: 0; right: 0; }
+.textRight select{ width: 100%; height: 28px; position: absolute; top: 0; left: 0; opacity: 0; filter: alpha(opacity:0); z-index: 1; cursor: pointer; }
+.textRight input{ width: 68px; height: 26px; line-height: 26px; border: 0; text-indent: 5px; text-align: center; }
+.numberBtn{ width: 30px; height: 28px; border-left: 1px solid #b7b7b7; display: inline-block; *display: inlne; zoom: 1; position: absolute; top: 0; right: 0; }
+.numberBtn span{ display: block; width: 100%; height: 14px; cursor: pointer; position: absolute; left: 0; background: url(../images/selectbg.png) no-repeat 0 0; }
+.numberBtn .add{ top: 0; background-position: 8px 2px; }
+.numberBtn .reduce{ bottom: 0; top: auto; background-position: 8px -10px; }
+.buying{ width: 100%; height: 50px; margin-top: 50px; }
+.Btn{ width: 100%; height: 50px; margin-top: 10px; }
+.buyBtn{ display: block; width: 100%; height: 100%; text-align: center; line-height: 50px; color: #fff; background: #940000; font-weight: bold; margin-bottom: 2px; cursor: pointer; position: relative;  }
+.buyBtn:hover{ opacity: .5; filter: alpha(opacity:50); }
+.joinCar>span:before{ content: ''; display: block; width: 20px; height: 20px; position: absolute; top: 15px; left: 30px; background: url(../images/detail.png) no-repeat -38px -138px;  }
+
+/*like*/
+.like{ width: 1000px; height: 400px; margin: 50px auto 0; }
+.hotTitle{ width: 100%; height: 30px; text-align: center; line-height: 30px; position: relative;}
+.hotTitle h1{ font-size: 30px; font-weight: normal; display: inline-block; position: relative; background: none repeat scroll 0 0 #fff; padding: 0 30px; }
+.hotTitle:before{ content: ''; display: block; width: 970px; height: 1px; background: #999; position: absolute; left: 15px; top: 15px; }
+.likeMain{ width: 100%; height: 320px; margin-top: 20px; overflow: hidden; position: relative; }
+.likeWrapper{ width: 3000px; height: 100%; padding-top: 1px; position: absolute; outline: 1px solid red; }
+.likeCon{ width: 1000px; height: 300px; float: left; margin-top: 10px; }
+.likeCon li{ width: 250px; height: 300px; float: left; }
+.hotcon{ width: 250px; height: 300px; }
+.hotcon:hover{ box-shadow: 0px 0px 3px #ccc; transition: box-shadow .3s linear 0s;}
+.hotconImg{ width: 165px; height: 180px;  margin-left: 43px; }
+.hotconImg img{ width: 165px; height: 180px; }
+.describe{ width: 165px; height: 20px; font-size: 14px; color: #ccc; text-align: center; margin: 10px auto; }
+.describe a:hover{ color: #999;  }
+.price{ display: block; width: 165px; height: 18px; line-height: 18px; font-size: 14px; font-weight: 800; margin: 30px auto; text-align: center;  }
+.likeBt{ width: 21px; height: 40px; position: absolute; top: 50%; margin-top: -20px; cursor: pointer;  }
+.likepre{ left: 0; background: url(../images/likebt.png) no-repeat 0 -45PX; }
+.likeNext{ right: 0; background: url(../images/likebt.png) no-repeat 0 0; }
+/*comment*/
+.comment{ width: 1000px; margin: 50px auto; }
+.commentStar{ width: 250px; height: 50px; margin: 10px auto; position: relative;}
+.commentStar span:first-child{ display: block; height: 50px; width: 175px; background: url(../images/commentstar.png); }
+.fenshu{ width: 40xp; height: 50px; font-size: 30px; font-weight: bold; color: #d50424; position: absolute; right: 25px; top: 5px; }
+.commentMain{ width: 100%; margin-top: 20px; }
+/*recentLook*/
+.recentLook{ width: 1000px; height: 400px; margin: 20px auto; }

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' />
+	<title>content</title>
+	<link rel='stylesheet' href='css/head.css' />
+	<link rel='stylesheet' href='css/content.css' />
+	<link rel='stylesheet' href='css/footer.css' />
+	<script src='js/jquery.min.js'></script>
+	<script src='js/jquery-migrate-1.1.0.min.js'></script>
+	<script src='js/head.js'></script>
+	<script src='js/content.js'></script>
+</head>
+<body>
+	<!--header start-->
+		<div class='header'>
+			<div class='headTop'>
+				<div class='headContent'>
+					<a href=''><div class='logo'><span>converse</span></div></a>
+					<div class='headLeft'>
+						<div class='loginbar'>
+							<span class='login'>登录</span>
+							<span>/</span>
+							<span class='regesiter'>注册</span>
+						</div>
+						<div class='others'>
+							<ul>
+								<li class='loginToal'></li>
+								<li class='shopcar'></li>
+								<li class='chat'></li>
+								<li class='search'></li>
+								<li class='help'></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='display'>
+				<div class='loginDisplay'>
+					<div class='loginContent'>
+						<div class='createCount'>
+							<h2 class='loginTitle'>还未注册？</h2>
+							<div class='button'>注册账户</div>
+						</div>
+						<div class='loginChoice'>
+							<h2 class='loginTitle'>您可以直接登录</h2>
+							<ul class='loginMode'>
+								<li class='wb'><a href=''></a></li>
+								<li class='wx'><a href=''></a></li>
+								<li class='xl'><a href=''></a></li>
+								<li class='rr'><a href=''></a></li>
+								<li class='db'><a href=''></a></li>
+							</ul>
+						</div>
+						<div class='loginPart'>
+							<h2 class='loginTitle'>已成为会员？</h2>
+							<form action='' method='post'>
+								<ul class='loginForm'>
+									<li class='border'><input type="text" name="userName" value='' /><span>邮箱/手机</span></li>
+									<li class='border'><input type="password" name="pwd" value='' /><span>账户密码</span></li>
+									<li><input id='yz' type="text" name="validate" value='' /><span>请输入验证码</span><img class='yzImg' src='images/yz.jpg'></li>
+									<li style='text-align: right;'><a href=''>换一张</a></li>
+									<li><div class='button'>登录</div></li>
+								</ul>
+							</form>
+						</div>
+					</div>
+					<div class='regesiterContent'>
+						<ul class='regesiterBox'>
+							<li>
+								<label>邮箱<span>*</span></label>
+								<div class='ipt'>
+									<input class='ys' type='email' name='Email' vlaue='' >
+									<span class='moren'>example@converse.com</span>
+									<span class='error'></span>
+								</div>
+							</li>
+							<li>
+								<label>手机号码<span>*</span></label>
+								<div class='ipt'>
+									<input class='ys' type='text' name='phoneNumber' vlaue='' >
+									<span class='moren'>136****555</span>
+									<span class='error'></span>
+								</div>
+							</li>
+							<li>
+								<label>性别<span>*</span></label>
+								<input type="hidden" name="">
+								<div class='ipt'>
+									<div class='checkbox'>男</div>
+									<div class='checkbox'>女</div>
+								</div>
+							</li>
+						</ul>
+						<ul class='regesiterBox'>
+							<li>
+								<label>输入密码<span>*</span></label>
+								<div class='ipt'>
+									<input class='ys' type='password' vlaue='' >
+									<span class='moren'>输入密码</span>
+									<span class='error'></span>
+								</div>
+							</li>
+							<li>
+								<label>确认密码<span>*</span></label>
+								<div class='ipt'>
+									<input class='ys' type='text' name='pwd' vlaue='' >
+									<span class='moren'>请再次输入密码</span>
+									<span class='error'></span>
+								</div>
+							</li>
+							<li>
+								<label>生日（年-月-日）<span>*</span></label>
+								<div class='ipt'>
+									
+								</div>
+							</li>
+						</ul>
+						<ul class='regesiterBox'>
+							<li>
+								<label>验证码<span>*</span></label>
+								<div class='ipt'>
+									<input id='yz' type='text' vlaue='' >
+									<img class='yzImg' src='images/yz.jpg'>
+									<span class='moren'>输入验证码</span>
+									<span class='error'></span>
+								</div>
+							</li>
+							<li>
+								<label>   </label>
+								<div class='button' style='margin-top: 15px;'>登录</div>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class='searchDisplay'>
+					<div class='searchContent'>
+						<input type="text" name="search">
+						<span>想找什么随便搜</span>
+						<div class='searchButton'>
+							<div class='searchBt'></div>
+							<div class='close'></div>
+					</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class='nav'>
+				<ul class='navContent'>
+					<li><a href=''>男的</a></li>
+					<li><a href=''>女的</a></li>
+					<li><a href=''>儿童</a></li>
+					<li><a href=''>电子杂志</a></li>
+					<li><a href=''>店铺分布</a></li>
+				</ul>
+				<div class='menu boy'>
+					<ul class='menuContent'>
+						<li><a href=''><img src='images/m-top1-1.jpg' /><span>踩的</span></a></li>
+						<li><a href=''><img src='images/m-top1-2.jpg' /><span>穿的</span></a></li>
+						<li><a href=''><img src='images/m-top1-3.jpg' /><span>戴的</span></a></li>
+						<li><a href=''><img src='images/m-top1-4.jpg' /><span>新产品</span></a></li>
+						<li><a href=''><img src='images/m-top1-5.jpg' /><span>优惠</span></a></li>
+					</ul>
+					<div class='line'></div>
+					<ul class='menuContent'>
+						<li><a href=''><img src='images/m-bt1-1.jpg' /><span>经典款</span></a></li>
+						<li><a href=''><img src='images/m-bt1-2.jpg' /><span>all stars</span></a></li>
+						<li><a href=''><img src='images/m-bt1-3.jpg' /><span>cons</span></a></li>
+						<li><a href=''><img src='images/m-bt1-4.jpg' /><span>jack purcell</span></a></li>
+						<li><a href=''><img src='images/m-bt1-5.jpg' /><span>chuck ii</span></a></li>
+					</ul>
+				</div>
+				<div class='menu girl'>
+					<ul class='menuContent'>
+						<li><a href=''><img src='images/m-top2-1.jpg' /><span>踩的</span></a></li>
+						<li><a href=''><img src='images/m-top2-2.jpg' /><span>穿的</span></a></li>
+						<li><a href=''><img src='images/m-top2-3.jpg' /><span>戴的</span></a></li>
+						<li><a href=''><img src='images/m-top1-4.jpg' /><span>新产品</span></a></li>
+						<li><a href=''><img src='images/m-top1-5.jpg' /><span>优惠</span></a></li>
+					</ul>
+					<div class='line'></div>
+					<ul class='menuContent'>
+						<li><a href=''><img src='images/m-bt1-1.jpg' /><span>经典款</span></a></li>
+						<li><a href=''><img src='images/m-bt2-2.jpg' /><span>all stars</span></a></li>
+						<li><a href=''><img src='images/m-bt2-3.jpg' /><span>cons</span></a></li>
+						<li><a href=''><img src='images/m-bt2-4.jpg' /><span>jack purcell</span></a></li>
+						<li><a href=''><img src='images/m-bt2-5.jpg' /><span>chuck ii</span></a></li>
+					</ul>
+				</div>
+				<div class='menu child'>
+					<ul class='menuContent'>
+						<li><a href=''><img src='images/m-top3-1.jpg' /><span>踩的</span></a></li>
+						<li><a href=''><img src='images/m-top1-4.jpg' /><span>穿的</span></a></li>
+						<li><a href=''><img src='images/m-top1-5.jpg' /><span>戴的</span></a></li>
+					</ul>
+					<div class='line'></div>
+					<ul class='menuContent'>
+						<li><a href=''><img src='images/m-bt1-1.jpg' /><span>经典款</span></a></li>
+						<li><a href=''><img src='images/m-bt3-2.jpg' /><span>all stars</span></a></li>
+						<li><a href=''><img src='images/m-bt3-3.jpg' /><span>cons</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class='headpop'></div>
+		</div>
+		<div class='contentMain'>
+			<div class='contentMaintop'>
+				<div class='detailTab'>
+					<div class='tabWrap'>
+						<div class='tabTitle share'><i></i><span>分享到</span></div>
+						<div class='tabCon'>
+							<a class='weibo' href=''></a>
+							<a class='weixin' href=''></a>
+							<a class='tengxun' href=''></a>
+							<a class='renren' href=''></a>
+							<a class='douban' href=''></a>
+						</div>
+					</div>
+					<div class='tabWrap'>
+						<div class='tabTitle collection'><i></i><span>加入收藏 9</span></div>
+					</div>
+					<div class='tabWrap'>
+						<div class='tabTitle'><span id='comtStar'></span></div>
+					</div>
+				</div>
+				<div class='detailProduct'>
+					<div class='nameWrapper'>
+						<h1 class='productName'>撞色插肩荧光短袖T恤  女款</h1>
+						<div class='productPrice'>价格 <i>￥209.00</i><span>￥168.00</span></div>
+					</div>
+					<div class='productImg'>
+						<div class='smallImg' style='display: block;'><img src='images/product0.png'></div>
+						<div class='bigImg'><img src='images/big0.png'></div>
+						<div class='glass'></div>
+					</div>
+					<div class='procuctList'>
+						<ul class='productListCon'>
+							<li style='border: 1px solid #b7b7b7'><img src='images/productlist0.png' /></li>
+							<li><img src='images/productlist1.png' /></li>
+							<li><img src='images/productlist2.png' /></li>
+							<li><img src='images/productlist3.png' /></li>
+							<li><img src='images/productlist4.png' /></li>
+						</ul>
+					</div>
+					<div class='productDescribe'>
+						<p>插肩短袖T恤，肩袖部拼色设计，跳跃出活力动感气息，凸显浓郁棒球运动风格。胸前搭配缤纷荧光色logo，年轻	个性，透出浓郁美式风情。纯棉面料，吸湿透气，柔软亲肤。100% 棉，荧光红。
+						</p>
+						<a class='productbtn' href="">chuck taylor all star</a>
+					</div>
+				</div>
+				<div class='detailBuy'>
+					<div class='colorChoice'>
+						<ul class='colors'>
+							<li style='border-color: #b7b7b7'><img src='images/color3.png' /></li>
+							<li><img src='images/color2.png' /></li>
+							<li><img src='images/color1.png' /></li>
+						</ul>
+					</div>
+					<div class='colorMessage'>
+						<div class='clmsg' style='display: block;'>
+							<p>色：萤光红</p>
+							<p>型号：10021001</p>
+						</div>
+						<div class='clmsg'>
+							<p>色：嫩蓝色</p>
+							<p>型号：10021002</p>
+						</div>
+						<div class='clmsg'>
+							<p>色：萤光黄</p>
+							<p>型号：10021003</p>
+						</div>
+					</div>
+					<div class='sizeTable'>尺码对照表</div>
+					<!-- 尺码对照表的弹出层 -->
+					<div class='popup'></div>
+					<div class='popupCon'>
+						<h2>女士上衣尺码对照表</h2>
+						<table cellspacing="0" cellpadding="0" align="center">
+							<tr><td>尺码标示</td><td>XS</td><td>S</td><td>m</td><td>l</td><td>xl</td><td>xxl</td><td>xxxl</td></tr>
+							<tr><td>宽松标示</td><td></td><td>s/m</td><td>s/m</td><td>l/xl</td><td>l/xl</td><td>xxl/xxxl</td><td>xxl/xxxl</td></tr>
+							<tr><td>上装号型</td><td>150/76A</td><td>155/80A</td><td>160/84A</td><td>165/88A</td><td>170/92A</td><td>175/96A</td><td>180/100B</td></tr>
+							<tr><td>适合胸围(厘米)</td><td>76 78</td><td>80 82</td><td>84 86</td><td>88 90</td><td>92 94</td><td>96 98</td><td>100 102</td></tr>
+							<tr><td>适合胸围(英寸)</td><td>29 6/8 30 4/8</td><td>31 3/8 32 2/8</td><td>33 33 7/8</td><td>34 4/8 35 2/8	</td><td>361/8 37</td><td>37 7/8 38 4/8</td><td>39 2/8 40 1/8</td></tr>
+						</table>
+						<p>注：实物尺寸因商品不同而略有差异，以上数据仅供参考，以收到实物为准<p>
+						<div class='popbt'>确认</div>
+						<div class='close'></div>
+					</div>
+					<div class='sizeConverter'>
+						<h2>尺码换算器</h2>
+					</div>
+					<div class='select'>
+						<div class='textLeft'>请选择您的尺码</div>
+						<div class='textRight'>
+							<span>请选择尺码</span>
+							<i></i>
+							<select id='sizeSelect'>
+								<option>请选择尺码</option>
+								<option>150/76A</option>
+								<option>155/80A</option>
+								<option>160/84A</option>
+								<option>165/88A</option>
+								<option>170/92A</option>
+							</select>
+						</div>
+					</div>
+					<div class='select'>
+						<div class='textLeft'>数量</div>
+						<div class='textRight'>
+							<input id='count' type='text' name='number' value='1'>
+							<div class='numberBtn'>
+								<span class='add'></span>
+								<span class='reduce'></span>
+							</div>
+						</div>
+					</div>
+					<div class='buying'>
+						<div class='Btn'><a class='buyBtn' href=''><span>立即购买</span></a></div>
+						<div class='Btn'><a class='buyBtn joinCar' href=''><span>加入购物车</span></a></div>	
+					</div>
+				</div>
+			</div>
+			<div class='like'>
+				<div  class='hotTitle'><h1>您或许会喜欢</h1></div>
+				<div class='likeMain'>
+					<div class='likeWrapper'>
+						<ul class='likeCon'>
+							<li>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/like1.png'></a></div>
+									<p class='describe'><a href=''>网眼布拼接短袖T恤 </a></p>
+									<span class='price'>￥217.00</span>
+								</div>
+							</li>
+							<li>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/like2.png'></a></div>
+									<p class='describe'><a href=''>网眼布拼接短袖T恤 </a></p>
+									<span class='price'>￥217.00</span>
+								</div>
+							</li>
+							<li>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/like3.png'></a></div>
+									<p class='describe'><a href=''>网眼布拼接短袖T恤 </a></p>
+									<span class='price'>￥217.00</span>
+								</div>
+							</li>
+							<li>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/like4.png'></a></div>
+									<p class='describe'><a href=''>网眼布拼接短袖T恤 </a></p>
+									<span class='price'>￥217.00</span>
+								</div>
+							</li>
+						</ul>
+						<ul class='likeCon'>
+							<li>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/like5.png'></a></div>
+									<p class='describe'><a href=''>网眼布拼接短袖T恤 </a></p>
+									<span class='price'>￥217.00</span>
+								</div>
+							</li>
+							<li>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/like6.png'></a></div>
+									<p class='describe'><a href=''>网眼布拼接短袖T恤 </a></p>
+									<span class='price'>￥217.00</span>
+								</div>
+							</li>
+							<li>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/like7.png'></a></div>
+									<p class='describe'><a href=''>网眼布拼接短袖T恤 </a></p>
+									<span class='price'>￥217.00</span>
+								</div>
+							</li>
+							<li>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/like8.png'></a></div>
+									<p class='describe'><a href=''>网眼布拼接短袖T恤 </a></p>
+									<span class='price'>￥217.00</span>
+								</div>
+							</li>
+						</ul>
+						<ul class='likeCon'>
+							<li>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/like9.png'></a></div>
+									<p class='describe'><a href=''>网眼布拼接短袖T恤 </a></p>
+									<span class='price'>￥217.00</span>
+								</div>
+							</li>
+							<li>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/like10.png'></a></div>
+									<p class='describe'><a href=''>网眼布拼接短袖T恤 </a></p>
+									<span class='price'>￥217.00</span>
+								</div>
+							</li>
+							<li>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/like11.png'></a></div>
+									<p class='describe'><a href=''>网眼布拼接短袖T恤 </a></p>
+									<span class='price'>￥217.00</span>
+								</div>
+							</li>
+							<li>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/like12.png'></a></div>
+									<p class='describe'><a href=''>网眼布拼接短袖T恤 </a></p>
+									<span class='price'>￥217.00</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class='likeNext likeBt'></div>
+					<div class='likepre likeBt'></div>
+				</div>
+			</div>
+			<div class='comment'>
+				<div  class='hotTitle'><h1><span>0<span>  评论</h1></div>
+				<div class='commentStar'>
+					<span></span>
+					<span class='fenshu'>5.0</span>
+				</div>
+				<div class='commentMain'></div>
+			</div>
+			<div class='recentLook'>
+				<div  class='hotTitle'><h1>您最近查看的商品</h1></div>
+					<div class='likeMain'>
+					<div class='likeWrapper'>
+						<ul class='likeCon'>
+							<li>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/like1.png'></a></div>
+									<p class='describe'><a href=''>网眼布拼接短袖T恤 </a></p>
+									<span class='price'>￥217.00</span>
+								</div>
+							</li>
+							<li>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/like2.png'></a></div>
+									<p class='describe'><a href=''>网眼布拼接短袖T恤 </a></p>
+									<span class='price'>￥217.00</span>
+								</div>
+							</li>
+							<li>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/like3.png'></a></div>
+									<p class='describe'><a href=''>网眼布拼接短袖T恤 </a></p>
+									<span class='price'>￥217.00</span>
+								</div>
+							</li>
+							<li>
+								<div class='hotcon'>
+									<div class='hotconImg'><a href=''><img src='images/like4.png'></a></div>
+									<p class='describe'><a href=''>网眼布拼接短袖T恤 </a></p>
+									<span class='price'>￥217.00</span>
+								</div>
+							</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+	<!-- sitesMap -->
+		<div class='siteMap'>
+				<div class='siteMapTitle'></div>
+				<ul class='sites'>
+					<li><a href=''>男的</a></li>
+					<li><a href=''>CHUCK TAYLOR ALL STAR</a></li>
+					<li><a href=''>CONVERSE CONS</a></li>
+					<li><a href=''>JACK PURCELL</a></li>
+					<li class='fen'><a href=''>CHUCK II</a></li>
+					<li><a href=''>踩的</a></li>
+					<li><a href=''>穿的</a></li>
+					<li><a href=''>戴的</a></li>
+					<li><a href=''>优惠</a></li>
+				</ul>
+				<ul class='sites'>
+					<li><a href=''>女的</a></li>
+					<li><a href=''>CHUCK TAYLOR ALL STAR</a></li>
+					<li><a href=''>CONVERSE CONS</a></li>
+					<li><a href=''>JACK PURCELL</a></li>
+					<li class='fen'><a href=''>CHUCK II</a></li>
+					<li><a href=''>踩的</a></li>
+					<li><a href=''>穿的</a></li>
+					<li><a href=''>戴的</a></li>
+					<li><a href=''>优惠</a></li>
+				</ul>
+					<ul class='sites'>
+					<li><a href=''>儿童</a></li>
+					<li><a href=''>CHUCK TAYLOR ALL STAR</a></li>
+					<li><a href=''>CONVERSE CONS</a></li>
+					<li><a href=''></a></li>
+					<li class='fen'><a href=''></a></li>
+					<li><a href=''>踩的</a></li>
+					<li><a href=''>穿的</a></li>
+					<li><a href=''>戴的</a></li>
+					<li><a href=''>优惠</a></li>
+				</ul>
+				<ul class='sites'>
+					<li><a href=''>电子杂志</a></li>
+					<li><a href=''>CHUCK TAYLOR ALL STAR</a></li>
+					<li><a href=''>CONVERSE CONS</a></li>
+					<li><a href=''>JACK PURCELL</a></li>
+					<li><a href=''></a></li>
+					<li><a href=''>活动</a></li>
+					<li><a href=''>音乐</a></li>
+					<li><a href=''>DIY</a></li>
+					<li><a href=''>时尚</a></li>
+					<li><a href=''>人物</a></li>
+				</ul>
+				<ul class='sites' style='margin-left: 120px;'>
+					<li><a href=''>我的账户</a></li>
+					<li><a href=''>现有订单</a></li>
+					<li><a href=''>过去订单</a></li>
+					<li><a href=''>退换货</a></li>
+					<li><a href=''>账户设置</a></li>
+					<li><a href=''>地址簿</a></li>
+					<li><a href=''>我的优惠券</a></li>
+					<li><a href=''>我的收藏</a></li>
+					<li><a href=''>我的评论</a></li>
+				</ul>
+				<ul class='sites'>
+					<li><a href=''>帮助和购物指南</a></li>
+					<li><a href=''>账户</a></li>
+					<li><a href=''>订单</a></li>
+					<li><a href=''>尺码</a></li>
+					<li><a href=''>退货和退款</a></li>
+					<li><a href=''>换货</a></li>
+					<li><a href=''>配送</a></li>
+					<li><a href=''>联系我们/a></li>
+					<li><a href=''>常见问题</a></li>
+				</ul>
+				<ul class='sites'>
+					<li><a href=''>NIKE</a></li>
+					<li><a href=''>NIKE+</a></li>
+					<li><a href=''>JORDAN</a></li>
+				</ul>
+			</div>
+	<!--footer start-->
+		<div class='footer'>
+			<div class='footerWrapper'>
+				<ul class='footerList'>
+					<li><a href=''>关于我们</a></li>
+					<li><a href=''>帮助和购物指南</a></li>
+					<li><a href=''>法律声明</a></li>
+					<li><a href=''>使用规则</a></li>
+				</ul>
+				<a class='footerLogo' href=''><div class='logo' style='margin: 0 auto;'><span>converse</span></div></a><br/>
+				<p>@匡威体育用品（中国）有限公司 保留所有权利    沪ICP备11044134号-2</p>
+			</div>
+		</div>
+</body>
+</html>

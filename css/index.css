@@ -1,0 +1,97 @@
+
+/*banner start*/
+.banner{ width: 100%; height: 527px; position: relative; }
+.bannerImg{ width: 100%; height: 100%; position: relative; }
+.bannerImg li{ width: 100%; height: 100%; position: absolute; opacity: 0;}
+.bannerImg li img{ width: 100%;}
+.bannerBt{ width: 40px; height: 100px; top: 50%; margin-top: -50px; background: #000; position: absolute; }
+.bannerBt span{ display: block; width: 22px; height: 44px; margin: 28px 0 0 8px; }
+.icon1{ background: url(../images/bannerBt.png) no-repeat 0 -41px; }
+.icon2{ background: url(../images/bannerBt.png) no-repeat 0 0; }
+.pre{ left: 0; }
+.next{ right: 0; }
+.imgTitle{ width: 450px; height: 36px; position: absolute; bottom: -50px; left: 50%; margin-left: -250px; }
+.imgTitle li{ padding: 5px; text-align: center; height: 15px; line-height: 15px; border-top: 1px solid #fff; font-size: 15px; color: #999; float: left; margin-left: 15px; }
+/*main start*/
+.main{ width: 1000px; margin: 100px auto 0; }
+.hot{ width: 100%; }
+.hotTitle{ width: 100%; height: 30px; text-align: center; line-height: 30px; position: relative;}
+.hotTitle h1{ font-size: 30px; font-weight: normal; display: inline-block; position: relative; background: none repeat scroll 0 0 #fff; padding: 0 30px; }
+.hotTitle:before{ content: ''; display: block; width: 970px; height: 1px; background: #999; position: absolute; left: 15px; top: 15px; }
+.hotTop{ width: 100%; height: 230px; margin-top: 50px; }
+.hotTopBox{ display: block; width: 240px; height: 100%; float: left; margin-left: 10px; }
+.hotTopBox h3{ font-size: 24px; height: 30px; line-height: 30px; font-weight: normal; text-align: center; }
+.hotTopImg{ width: 200px; height: 200px; margin-left: 20px; }
+.hotLine{ width: 1000px; height: 20px; margin: 20px auto; position: relative; }
+.hotLine:before{ content: ''; display: block; width: 100%; height: 1px; background: #999; }
+.hotLineBox{ width: 39px; height: 21px; position: absolute; background: url(../images/active.png) no-repeat; top: 0; left: 110px; }
+.hotMain{ width: 100%; height: 800px; margin-top: 20px; position: relative; }
+.hotBox{ width: 100%; opacity: 0; position: absolute;}
+.hotBoxClum{ width: 100%; height: 300px; margin-bottom: 20px;}
+.hotcon{ width: 250px; height: 300px; float: left; }
+.hotcon:hover{ box-shadow: 0px 0px 3px #ccc; transition: box-shadow .3s linear 0s;}
+.hotconImg{ width: 165px; height: 180px;  margin-left: 43px; }
+.hotconImg img{ width: 165px; height: 180px; }
+.describe{ width: 165px; height: 20px; font-size: 14px; color: #ccc; text-align: center; margin: 10px auto; }
+.describe a:hover{ color: #999;  }
+.price{ display: block; width: 165px; height: 18px; line-height: 18px; font-weight: 800; margin: 30px auto; text-align: center;  }
+.hotBoxline{ width: 100%; height: 1px; background: #ccc; margin-bottom: 30px; }
+.more{ width: 420px; height: 48px; margin: 20px auto; border: 1px solid #000; }
+.more a{ display: block; width: 100%; height: 100%; background: #000; color: #fff; font-size: 16px; text-align: center; line-height: 48px; position: relative;  }
+.more a:hover{ background: #fff; color: #000; transition: all .3s ease .1s; }
+.more a>span{ display: block; width: 20px; height: 30px; background: url(../images/index.png) no-repeat -8px -162px; position: absolute; left: 320px; top: 10px;}
+.newProduct{ width: 100%; height: 1000px; }
+.newBox{ width: 100%; height:1000px;  }
+.special{ width: 1000px; margin: 80px auto 0; }
+.specialTitle{ width: 100%; height: 40px; background: #464646; padding-top: 1px; }
+.specialTitleBox{ width: 60%; height: 19px; margin: 7px 0 0 25px; position: relative; }
+.specialTitleBox img{ margin-top: 2px; }
+.specialTitleBox span{ color: #fff; font-size: 18px; position: absolute; top: -2px; left: 30px;}
+.specialMain{ width: 100%; height: 532px; margin-top: 20px;   }
+.specialMainBox{ width: 488px; height: 100%; }
+.specialMainBoxImg{ width: 100%; height: 366px; outline: 1px solid #999; position: relative; }
+.specialMainBoxImg a{ display: block; width:100%; height: 100%;  }
+.specialDescribe{ display: block; width: 100%; height: auto; margin-top: 10px; }
+.specialDescribe:hover{ color: #999; }
+.specialDescribe h2{ font-size: 24px; font-weight: normal; }
+.specialDescribe p{ font-size: 12px; margin-top: 10px;}
+.lookMore{ display: block; width: 150px; height: 48px; padding: 0 10px; text-align: center; line-height: 48px; font-size: 16px; color: #fff; background: #000; border: 1px solid #000; margin-top: 16px; position: relative; }
+.lookMore:after{ content:''; display: block; width: 20px; height: 30px; background: url(../images/index.png) no-repeat -9px -163px; position: absolute; top: 11px; right: 20px; }
+.lookMore:hover{ color: #333; background: #fff; transition: all .3s ease .1s;}
+.lf{ float: left; }
+.rg{ float: right; }
+.mask{ width: 100%; height: 100%; top: 0; left: 0; bottom: 0; right: 0; position: absolute; background: rgba(0,0,0,.5); display: none; }
+.specialMainBoxImg:hover .mask{ display: block; }
+.stories{ width: 100%; height: 460px; margin-top: 70px; background: #464646; overflow: hidden;}
+.stories h2{ width: 330px; height: 30px; font-size: 30px; color: #fff;  margin: 80px auto 30px; font-weight: normal;}
+.storyMain{ width: 1000px; height: 300px; margin: 0 auto; overflow: hidden; }
+.storyCloum{ width: 690px; height: 50px; margin: 30px auto; }
+.storyBox{ display: block; height: 50px; background: #fff; text-align: center; line-height: 50px; float: left; font-size: 18px; font-weight: 800; text-transform: uppercase; }
+.s1{ width: 200px;  margin-left: 22px;  }
+.s2{ width: 110px; margin-left: 30px;  }
+.storyBox:hover{ color: #fff; background: #000; transition: all .3s ease .1s; }
+.storyLast{ width: 850px; height: 50px; margin: 40px auto; }
+.specialMain2{ width: 1000px; height: 420px; margin-top: 20px; }
+.specialMainBox2{ width: 320px; height: 100%; float: left; margin-left: 20px; }
+.specialMainBoxImg2{ width: 100%; height: 242px;  }
+.specialMainBoxImg2 a{ display: block; width: 320px; height: 242px; }
+.lookMore2{ display: block; font-size: 20px; color: #333; text-decoration: underline; margin-top: 16px; position: relative; }
+.lookMore2:after{ content:''; display: block; width: 20px; height: 30px; background: url(../images/arrow1.png) no-repeat -20px -1px; position: absolute; top: 2px; left: 90px; }
+.lookMore2:hover{ opacity: .5; }
+.specialMainBoxImg2:hover .mask{ display: block; }
+.concern{ width: 100%; height: 360px; background: #464646; margin-top: 80px; overflow: hidden; color: #fff;}
+.concern h2{ font-size: 30px; font-weight: normal; margin: 78px auto 35px; width: 220px; height: 30px; line-height: 30px; }
+.concern p{ width: 830px; margin: 0 auto; }
+.share{ width: 525px; height: 75px; margin: 37px auto; }
+.share li{ width: 75px; height: 100%; float: left; margin-left: 30px;}
+.share li a{ display: block; width: 100%; height: 100%; }
+.weibo{ background: url(../images/share.png) no-repeat -75px 0;  }
+.weixin{ background: url(../images/share.png) no-repeat -75px -75px;  }
+.xinlang{ background: url(../images/share.png) no-repeat -75px -150px;  }
+.renren{ background: url(../images/share.png) no-repeat -75px -225px;  }
+.douban{ background: url(../images/share.png) no-repeat -75px -300px;  }
+.weibo:hover{ background: url(../images/share.png) no-repeat 0 0;  }
+.weixin:hover{ background: url(../images/share.png) no-repeat 0 -75px;  }
+.xinlang:hover{ background: url(../images/share.png) no-repeat 0 -150px;  }
+.renren:hover{ background: url(../images/share.png) no-repeat 0 -225px;  }
+.douban:hover{ background: url(../images/share.png) no-repeat 0 -300px;  }

@@ -1,0 +1,95 @@
+/*reset*/
+*{ margin: 0; padding: 0; }
+body{ color: #333;}
+ul,ol{ list-style: none; }
+a{ text-decoration: none; color: #333; }
+/*header start*/
+.header{ width: 100%; height: 130px; background: #000; /*position: fixed; top: 0;*/ z-index: 1000; }
+.headTop{ width: 100%; height: 79px; padding-top: 1px;}
+.headContent{ width: 1197px; height: 40px; margin: 20px auto; padding: 1px;}
+.logo{ width: 133px; height: 19px; background: url(../images/index.png) no-repeat 0 0; margin-top: 10px; float: left; }
+.logo span{ display: none;}
+.headLeft{ width: 470px; height:30px; float: right; margin-top: 5px; font-size: 12px; color: #fff;}
+.loginbar{ width: 100px; height: 100%; float: left;}
+.login:hover,.regesiter:hover{ cursor: pointer; }
+.loginbar span{ display: inline-block; height: 20px; margin: 5px 0 0 5px; }
+.others{ width: 350px; height: 100%; float: left; margin-left: 10px;}
+.others ul{ width: 100%; height: 30px; }
+.others ul li{ width: 30px; height: 30px; float: left; border-radius: 50%; margin-left: 50px; position: relative;}
+.others ul li:first-child{ margin-left: 0;}
+.others ul li:hover{ cursor: pointer; }
+.sj{ content: '';display: blcok; position: absolute; top: 50px; left: 3px; width: 0; height: 0; border-width: 15px; border-style: solid; border-color: #000 transparent transparent transparent; z-index: 101; display: none;  }
+.loginToal{ background: url(../images/index.png) no-repeat -96px -85px;}
+.shopcar{ background: url(../images/index.png) no-repeat -64px -54px;}
+.chat{ background: url(../images/index.png) no-repeat -95px -54px;}
+.search{ background: url(../images/index.png) no-repeat -137px -161px;}
+.help{ background: url(../images/index.png) no-repeat -169px -161px;}
+.loginToal:hover{ background: url(../images/index.png) no-repeat -136px -65px;}
+.shopcar:hover{ background: url(../images/index.png) no-repeat -167px -33px;}
+.chat:hover{ background: url(../images/index.png) no-repeat -135px -33px;}
+.search:hover{ background: url(../images/index.png) no-repeat -135px -1px;}
+.help:hover{ background: url(../images/index.png) no-repeat -167px -1px;}
+/*display*/
+.display{ width: 100%; height: auto; position: relative; background: #fff; z-index: 100;}
+/*loginDisplay*/
+.loginDisplay{ width: 1000px; height: 317px; padding: 40px 0; margin: 0 auto; display: none;}
+.loginDisplay div{ float: left; }
+/*loginContent*/
+.loginContent{ width: 100%; height: 100%; display: none;}
+.createCount{ width: 150px; height: 100%; }
+.loginTitle{ font-size: 24px; margin-bottom: 20px; width: 100%; text-align: left; font-weight: 300; }
+.button{ width: 100%; height: 40px; text-align: center; line-height: 40px; background: #000; border: 1px solid #000; font-size: 18px; color: #fff; cursor: pointer; }
+.button:after{ content: ''; display: block; width: 15px; height: 28px; display: inline-block; vertical-align: middle; margin-left: 12px; background: url(../images/index.png) no-repeat -10px -164px;   }
+.loginChoice{ width: 300px; height: 100%; border-left: 1px solid #999; border-right: 1px solid #999; padding: 0 50px;margin:0 50px;   }
+.loginMode{ width: 250px; height: 40px; }
+.loginMode li{ width: 40px; height: 40px; margin-right: 10px; float: left; cursor: pointer; }
+.wb{ background: url(../images/loginMode.png) 0 0; }
+.wx{ background: url(../images/loginMode.png) 0 -96px; }
+.xl{ background: url(../images/loginMode.png) 0 -144px; }
+.rr{ background: url(../images/loginMode.png) 0 -192px; }
+.db{ background: url(../images/loginMode.png) 0 -240px; }
+.loginPart{ width: 300px; height: 100%; }
+.loginForm{ width: 100%; height: 100%; }
+.loginForm li{ width: 298px; height: 38px;  margin-bottom: 20px; position: relative;}
+.loginForm li input{ width: 100%; height: 100%; padding: 2px 5px 2px 18px; border: 1px solid #999; background: #fff;  }
+.loginForm li span{ position: absolute; display: block; font-size: 12px; color: #999; top: 15px; bottom: 0; left: 18px; z-index: 0; }
+#yz,.yzImg{ width: 130px; height: 100%; display: inline-block;   }
+#yz{  float: left; }
+.yzImg{  float: right; }
+/*regesiterContent*/
+.regesiterContent{ width: 1000px; height: 317px; display: none; }
+.regesiterBox{ width: 100%; height: 95px; }
+.regesiterBox li{ width: 300px; height: 100%; float: left; margin-right: 50px; }
+.regesiterBox li:last-child{ margin-right: 0;  }
+.regesiterBox li>label{ display: block; font-size: 13px; margin-bottom: 10px; }
+.regesiterBox li>label span{ color: red; margin-left: 5px; }
+.ipt{ width: 100%; height: 40px; line-height: 40px; position: relative; }
+.moren{ position: absolute; font-size: 12px; left: 18px; color: #999; }
+.ys{ width: 100%; height: 40px; padding: 5px 5px 5px 18px; border: 1px solid #999; box-sizing: border-box; background: #fff; }
+.checkbox{ width: 150px; cursor: pointer; text-indent: 30px; text-align: left; position: relative; float: left; }
+.checkbox:before{ content: '';display: block; width: 14px; height: 14px; position: absolute; left: 0; top: 50%; margin-top: -7px; border: 1px solid #999; }
+/*searchDisplay*/
+.searchDisplay{ width: 1000px; height: 40px; margin: 0 auto; padding: 20px 0; display: none;}
+.searchContent{ width: 100%; height: 100%; position: relative; }
+.searchContent input{ height: 100%; line-height: 40px; color: #999;border: 0; font-size: 24px; }
+.searchContent span{ position: absolute; font-size: 24px; color: #999; left: 10px; }
+.searchButton{ position: absolute; top: 0; right: 0; height: 40px; width: 104px; }
+.searchButton div{ width: 32px; height: 32px; float: left; margin: 4px 0 0 15px; }
+.searchBt{ background: url(../images/index.png ) no-repeat -136px -161px;  }
+.close{ background: url(../images/index.png ) no-repeat -168px -129px;  }
+.searchBt:hover,.close:hover{ cursor: pointer; opacity: .5; }
+/*nav start*/
+.nav{ width: 100%; height: 50px; background: #464646; position: relative; z-index: 100; box-shadow: 0 0 3px #000;}
+.navContent{ width: 580px; height: 100%; margin: 0 auto; }
+.navContent li{ min-width: 110px; height: 38px; float: left; text-align: center; margin-top: 5px;   font-size: 18px; }
+.navContent li a{ display: block; height: 100%; color: #fff; position: relative; }
+.navContent li a:after{ content: '';display: block; position: absolute; top:28px; left: 50px;  width: 0; height: 0; border-width: 6px; border-color: #fff transparent transparent transparent; border-style: solid;}
+.menu{ width: 100%; height: 261px;  background: #fff; display: none; opacity: 0; position: absolute; top: 50px; text-transform: uppercase; z-index: 101;}
+.menuContent{ width: 700px; height: 130px; margin: 0 auto;}
+.menuContent li{ width: 130px; height: 100%; float: left; }
+.menuContent li a{ display: block; color: #333; font-size: 14px; position: relative; }
+.menuContent li a:hover{ color: #999; }
+.menuContent li span{ width: 100px; text-align: center; position: absolute; bottom: 15px; left: 50%; margin-left: -50px; }
+.line{ width: 100%; height: 1px; background: #b7b7b7;}
+/*弹出层*/
+.headpop{ position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: none;z-index: 90; background: rgba(0,0,0,.8) }
